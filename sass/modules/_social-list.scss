@@ -1,0 +1,34 @@
+
+.social-list {
+    margin-bottom: 15px;
+    text-align: left;
+    li {
+        display: inline-block;
+        margin: 0 2px;
+        a {
+            display: block;
+            width: 38px;
+            height: 38px;
+            border: 2px solid #eff2f7;
+            @include box-shadow(0 0 1px #dfe1e5 inset);
+            @include transition(all 0.3s ease-out);
+            @include border-radius(50%);
+            line-height: 34px;
+            text-align: center;
+            background: #fff;
+            i {
+                font-size: 14px;
+                color: #999999;
+                @include transition(all 0.3s ease-out);
+            }
+            &:hover {
+                background: $orange;
+                border-color: $orange;
+                @include box-shadow(0 0 1px #ffb17f inset);
+                i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

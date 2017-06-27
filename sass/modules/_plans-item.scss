@@ -1,0 +1,90 @@
+.plan-item {
+    background: #fff;
+    @include border-radius(5px);
+    border: 1px solid #eeeeee;
+    &.active {
+        border: none;
+        border-top: 5px solid $orange;
+        position: relative;
+        z-index: 3;
+        margin: -15px;
+        padding-bottom: 15px;
+        @include box-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
+        .item-heading {
+            padding-top: 54px;
+            margin-bottom: 3px;
+        }
+        .item-body {
+            border-top: 1px solid #e7e8ec;
+        }
+        .item-footer {
+            .btn {
+                background: $orange;
+                color: #fff;
+            }
+        }
+    }
+    .item-heading {
+        padding-top: 40px;
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e7e8ec;
+        .name {
+            font-size: 14px;
+            color: $orange;
+            text-transform: uppercase;
+            font-weight: normal;
+            margin-bottom: 15px; 
+            display: inline-block;
+        }
+        .count {
+            font-size: 50px;
+            color: #2a2d32;
+            margin-bottom: 5px;
+        }
+        em {
+            color: #cccccc;
+            font-size: 14px;
+        }
+    }
+    .item-body {
+        .list-features {
+            padding: 35px 30px 20px 55px;
+            text-align: left;
+            li {
+                font-family: Raleway, serif;
+                padding: 11px 0;
+                color: #cccccc;
+                &.active {
+                    color: #666666;
+                    &:before {
+                        content: "\f00c";
+                        color: $orange;
+                    }
+                }
+                &:before {
+                    content: "\f00d";
+                    font-family: FontAwesome;
+                    color: #cccccc;
+                    font-size: 12px;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .item-footer {
+        padding: 20px 15px 35px;
+        .btn {
+            border-color: #eeeeee;
+            font-size: 11px;
+            color: #333333;
+            padding-left: 30px;
+            padding-right: 30px;
+            &:hover {
+                background: $orange;
+                color: #fff;
+            }
+        }
+    }
+}

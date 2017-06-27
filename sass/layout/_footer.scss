@@ -1,0 +1,232 @@
+
+/******************************/
+/**** BUY SECTION ****/
+/******************************/
+
+.buy-section {
+    background: $orange;
+    padding: 80px 0; 
+    &.buy-text-section {
+        .section-text {
+            padding-left: 0;
+        }
+        .buy-text {
+            .top-text {
+                margin-bottom: 30px;
+                font-size: 14px;  
+            }
+            .bottom-text {
+                font-family: Raleway, sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                max-width: 780px;
+                margin: 0 auto 50px;
+                line-height: 2;
+                color: #ffe6dd;
+            }
+            em {
+                color: #ffe6dd;
+            }
+        }
+    }
+    .section-text {
+        padding-left: 60px;
+        position: relative; 
+        min-height: 46px; 
+        .like {
+            margin: 0;
+            position: absolute;
+            left: 0;
+            .icon {
+                font-size: 46px;
+                color: #fff;
+            }
+        }
+    }
+    .buy-text { 
+        .top-text {
+            text-transform: uppercase;
+            font-size: 22px;
+            color: #fff;
+
+        } 
+        .bottom-text {
+            font-size: 18px;
+            color: #ffe6dd;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+    }
+}
+
+/******************************/
+/**** SOCIAL SECTION ****/
+/******************************/
+
+.social-section {
+    padding: 50px 0;
+    background: url(../img/sections/section-2.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    &.orange-social-section {
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            display: block;
+            background: #ff6400;
+            opacity: 0.95;
+        }
+        .tt {
+            color: #fff;
+        }
+        .list-socials {
+            li {
+                a {
+                    border-color: #fff;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .tt {
+        color: #999999;
+        font-size: 16px;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+    }
+    .list-socials {
+        padding: 15px 0 3px; 
+        li {
+            display: inline-block;
+            a {
+                display: block;
+                line-height: 48px; 
+                text-align: center;
+                width: 48px;
+                height: 48px;
+                @include transition(all 0.5s ease-out);
+                @include border-radius(50%);
+                border: 2px solid #5a5a5a;
+                color: #999999;
+                margin: 0 6px 12px;
+                &:hover {
+                    @include transition(all 0.1s ease-out);
+                    background: $orange;
+                    color: #fff;
+                    border-color: $orange;
+                }
+            }
+        }
+    }
+}
+
+.white-footer {
+    color: #333333;
+    .footer-section {
+        background: #eff2f7;
+        h5 {
+            color: #333333;
+        }
+        p,
+        .footer-nav li a  { 
+            color: #666666;
+        }
+        .form-control-feedback {
+            color: $orange;
+        }
+    }
+    .copyright-section {
+        background: #fff;
+        p {
+            color: #999999;
+            span {
+                color: #cccccc;
+            }
+        }
+    }
+}
+
+/******************************/
+/**** FOOTER SECTION ****/
+/******************************/
+
+.footer-section {
+    padding: 80px 0 70px;
+    background: #1a1a1a; 
+    h5 {
+        color: #cccccc;
+    }
+    p {
+        color: #999999;
+        font-size: 12px;
+    }
+    .footer-nav {
+        li {
+            line-height: 24px;
+            &.active {
+                a {
+                    color: $orange;
+                }
+            }
+            a {
+                font-size: 12px;
+                line-height: 2;
+                font-family: 'Raleway', sans-serif;
+                color: #999999;
+                text-decoration: none;
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+    .contacts-list {
+        i {
+            min-width: 20px;
+            margin-right: 10px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        a {
+            color: #999;
+            text-decoration: none;
+        }
+    }
+    .form-control {
+        border-color: #333333;
+        &:focus, &:active {
+            border-color: #999;
+
+        }
+    }
+    .form-control-feedback {
+        color: #999;
+    }
+}
+
+
+/******************************/
+/**** COPYRIGHT SECTION ****/
+/******************************/
+
+.copyright-section {
+    padding: 30px 0;
+    text-align: center;
+    background: #000000;
+    p {
+        margin-bottom: 0;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #999;
+        font-family: 'Montserrat', sans-serif;
+        span {
+            color: #ccc;
+        }
+    }
+}

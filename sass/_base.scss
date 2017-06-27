@@ -1,0 +1,153 @@
+@import "compass/reset";
+@import "compass/css3";
+
+@import "layout/_variables.scss";
+
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    /*padding-bottom: 500px;*/
+}
+* {
+    outline: none !important;
+}
+/*
+                font-family: 'Playfair Display', serif;
+                font-style: italic;
+*/
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.img-responsive {
+    display: inline-block;
+    vertical-align: middle;
+}
+.vtop {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row.no-gutter [class*='col-']:not(:first-child), 
+.row.no-gutter [class*='col-']:not(:last-child) {
+    padding-left: 0;
+    padding-right: 0;
+}
+.relative {
+    position: relative;
+}
+.text-white {
+    color: #fff;
+}
+.invertX {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+em {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #999999;
+    font-size: 13px;
+}
+p {
+    font-size: 12px;
+    color: #333;
+    line-height: 2;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0 2.14em;
+    &.large {
+        font-size: 14px;
+    }
+}
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+} 
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    line-height: 28px;
+}
+h5 {
+    color: #333333;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: bold;
+    position: relative;
+    &.italic-title {
+        font-size: 16px;
+        color: #999999;
+        margin-bottom: 10px;
+        font-weight: normal;
+        text-transform: none;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        &:after {
+            display: none;
+        }
+    }
+    &:after {
+        content: "";
+        display: block;
+        margin-top: 20px;
+        width: 25px;
+        height: 4px;
+        background: $orange;
+    }
+}
+
+ul {
+    &.marker-list {
+        margin-bottom: 15px;
+        li {
+            color: #666666;
+            font-size: 14px;
+            font-family: Raleway, serif;
+            line-height: 24px;
+            padding: 3px 0 ;
+            font-weight: 500;
+            &:before {
+                content: "\f00c";
+                font-family: FontAwesome;
+                font-size: 12px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 15px;
+                color: $orange;
+            }
+        }
+    }
+}
+
+// Google maps
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+
+// THEME STYLES   
+
+@import "_theme.scss";

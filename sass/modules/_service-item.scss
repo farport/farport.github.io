@@ -1,0 +1,53 @@
+.service-item {
+    padding: 40px 0 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    &:hover {
+        .wrap-service-icon {      
+            border-color: #ddddde;
+            .service-icon {
+                background: $orange;
+                border-color: $orange;
+                .icon {
+                    color: #fff;
+                }
+            } 
+        }
+
+    }
+    .wrap-service-icon {
+        width: 78px;
+        height: 78px;
+        margin-right: 5px;
+        background: #eff2f7;
+        border: 1px solid #eff2f7;
+        padding: 5px;
+        @include border-radius(50%);
+        @include transition(all 0.3s ease-out);
+
+        .service-icon {
+            width: 66px;
+            height: 66px;
+            border: 1px solid #ddddde;
+            background: #ffffff;
+            text-align: center;
+            @include border-radius(50%);
+            @include transition(all 0.3s ease-out);
+            .icon {
+                font-size: 26px;
+                line-height: 64px;
+                color: #666666;
+                @include transition(all 0.3s ease-out);
+            }
+        }
+    }
+    h5 {
+        margin-bottom: 5px;
+        &:after {
+            display: none;
+        }
+    }
+    p {
+        margin-bottom: 15px;
+    }
+}

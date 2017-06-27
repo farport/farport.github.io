@@ -1,0 +1,124 @@
+.reviews-slider {
+    overflow: hidden;
+    padding-top: 20px;
+    &.review-slider-seconds {
+        .slide-item {
+            margin-right: 30px;
+            .image-block {
+                width: 200px;
+                height: 200px;
+            }
+            .description-block {
+                .review {
+                    z-index: -1;
+                    padding: 50px 25px 50px 50px;
+                    em {
+                        color: #666666;
+                    } 
+                }
+            }
+        }
+        .owl-controls {
+            .owl-pagination {
+                padding-top: 60px;
+                text-align: center;
+            }
+        }
+    }
+    .owl-wrapper {
+        &:after {
+            content: "";
+            clear: both;
+            display: table;
+            height: 0;
+        }
+        &:before {
+            content: "";
+            clear: both;
+            display: table;
+            height: 0;
+        }
+    }
+    .owl-controls {
+        .owl-pagination {
+            padding: 15px 0;
+            text-align: right;
+            .owl-page {
+                display: inline-block;
+                vertical-align: niddle;
+                width: 10px;
+                height: 10px;
+                border: 1px solid #cfcfcf;
+                background: #fff;
+                margin: 0 5px;
+                @include border-radius(50%);
+                cursor: pointer;
+                &.active, &:hover {
+                    background: #666;
+                    border-color: #666;
+                }
+            }
+        }
+    }
+    .slide-item {
+        &:after {
+            content: "";
+            clear: both;
+            display: table;
+            height: 0;
+        }
+        &:before {
+            content: "";
+            clear: both;
+            display: table;
+            height: 0;
+        }
+        .media-left {
+            padding: 0;
+        }
+        .media-body {
+            overflow: visible;
+        }
+        .image-block { 
+            width: 300px;
+        }
+        .description-block {
+            .name {
+                padding: 20px 15px 30px 35px;
+                span {
+                    font-size: 14px;
+                    color: #333333;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                    font-weight: bold;
+                }
+            }
+            .review {
+                border:  1px solid #eeeeee;
+                padding: 50px;
+                margin-left: -30px;
+                position: relative;
+                background: #fff;
+                @include box-shadow(1px 2px 12px 0px rgba(0, 0, 0, 0.08));
+                &:before {
+                    content: "";
+                    width: 40px;
+                    height: 34px;
+                    display: block;
+                    position: absolute;
+                    top: -20px;
+                    background: url(../img/quotes.png) center no-repeat;
+                    right: 50px;
+                }
+                em {
+                    color: #666666;
+                    font-size: 16px;
+                    line-height: 30px;
+
+                }
+            }
+        }
+    }
+}

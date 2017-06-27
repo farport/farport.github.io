@@ -1,0 +1,83 @@
+.steps-list {
+    .col-md-4 {
+        &:last-child {
+            .step-item {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .step-item {
+        text-align: center;
+        position: relative;
+        margin-bottom: 120px;
+        &:after {
+            content : '';
+            display: block;
+            width: 178px;
+            height: 29px;
+            background: url(../img/step-arrow.png) center no-repeat;
+            position: absolute;
+            top: 120%;
+            left: 76%;
+        }
+        &.invert {
+            .item-icon {
+                background: $orange;
+                &:before {
+                    background: #333;
+                }
+            }
+        }
+        .item-text {
+            display: inline-block;
+            vertical-align: middle;
+            h5 {
+                margin: 0;
+                border: 0;
+                padding:0 ;
+                line-height: 24px;
+                color: #333333;
+                text-align: left;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        .item-icon {
+            position: relative;
+            width: 75px;
+            height: 75px;
+            line-height: 80px;
+            text-align: center;
+            text-indent: 5px;
+            background: #333333;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 15px;
+            @include border-radius(50%);
+            &:before {
+                content: attr(data-count);
+                border: 5px solid #eff2f7;
+                @include border-radius(50%);
+                position: absolute;
+                top: -5px;
+                left: -5px;
+                display: block;
+                width: 30px;
+                height: 30px;
+                background: $orange;
+                line-height: 20px;
+                text-align: center;
+                color: #fff;
+                font-size: 14px;
+                text-indent: 0;
+            }
+            .icon {
+                font-size: 22px;
+                color: #fff;
+            }
+        }
+    }
+}

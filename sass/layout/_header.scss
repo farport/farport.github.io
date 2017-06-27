@@ -1,0 +1,182 @@
+/*****************/
+/***** HEADER ****/
+/*****************/
+body {
+    &.fixed-header {
+        .scrolling-header {
+            .navbar {
+                background: rgba(255, 255, 255, 0.9);
+                padding-top: 15px;
+                padding-bottom: 15px;
+                .navbar-nav li a {
+                    color: #333;
+                }
+                .normal-logo {
+                    display: none;
+                }
+                .scroll-logo {
+                    display: inline-block;
+                }
+                .navbar-search {
+                    .input-group {
+                        .form-control {
+                            height: 80px;
+                            color: #7f858f;
+                        }
+                        .search-close {
+                            color: #7f858f;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+.header {
+    &.search-open {
+        .navbar {
+            .relative-nav-container {
+                opacity: 0;
+            }
+            // Searh
+            .navbar-search {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    .navbar {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        margin-bottom: 0;
+        background: none;
+        border: none;
+        @include transition(all 0.3s ease-out);
+        .relative-nav-container {
+            @include transition(all 0.3s ease-out);
+        }
+        .toggle-button {
+            line-height: 40px;
+            color: #999;
+            cursor : pointer;
+        }
+        // Searh
+        .navbar-search {
+            @include transition(all 0.3s ease-out);
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+            .input-group {
+                .form-control {
+                    @include transition(all 0.3s ease-out);
+                    height: 120px;
+                    border: none;
+                    color: white;
+                    font-size: 30px;
+                    font-family: "Raleway", sans-serif;
+                    font-weight: normal;
+                }
+                .search-close {
+                    background: none;
+                    border: none;
+                    color: #fff;
+                }
+            }
+        }
+        .scroll-logo {
+            display: none;
+        }
+        .navbar-nav {
+            > li {
+                &.active {
+                    background: none;
+                    border: none;
+                    > a {
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid $orange;
+                    }
+                }
+                > a {
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    border-bottom: 1px solid transparent;
+                    @include transition(color 0.3s ease-out);
+                    &:hover {
+                        color: #fff;
+                        border-bottom: 1px solid $orange;
+                    }
+                }
+            }
+            &.wrap-user-control {
+                margin-left: 15px;
+                li {
+                    color: $orange;
+                    a {
+                        color: $orange;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.navbar-with-inside > li:hover .wrap-inside-nav {
+    display: block;
+}
+body.fixed-header .scrolling-header .navbar {
+    .wrap-inside-nav { 
+        /*top: 64px;*/ 
+    }
+}
+.wrap-inside-nav {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: none;
+    min-width: 220px;
+    text-align: left;
+    border-top: 2px solid $orange;
+    background: #1a1a1a;
+    @include transition(all 0.3s ease-out);
+    .inside-col {
+        padding: 30px 0;
+        .inside-nav {
+            &:after, &:before {
+                display: table;
+                clear: both;
+                height: 0;
+                content: '';
+            }
+            li {
+                line-height: 45px;
+                min-height: 45px;
+                a {
+                    display: block;
+                    padding-left: 20px;
+                    color: #7e848e !important;
+                    font-size: 14px; 
+                    text-decoration: none;
+                    &:active, &:focus {
+                        display: block;
+                        padding-left: 20px;
+                        color: $orange !important;
+                    }
+                    &:hover, &:active:hover, &:visited:hover, &:focus:hover {
+                        color: $orange !important;
+                        background-color: #26282d;
+                    }
+                }
+            }
+        }
+    }
+}

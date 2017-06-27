@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="1600px" height="148px" viewBox="0 0 1600 148">
+<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+<feImage x="-12" y="0" width="1623" height="148" preserveApectRatio="none" xlink:href="#symbol0"/>
+<feComposite in="grImage1" in2="SourceAlpha" operator="in" result="grOverlay1"/>
+<feBlend in="grOverlay1" in2="SourceGraphic" mode="normal" result="gradientOverlay1"/>
+</filter>
+<linearGradient id="linear_PSgrad_0" x1="50%" y1="100%" x2="50%" y2="0%">
+    <stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity="1" />
+    <stop offset="100%" stop-color="rgb(241,241,241)" stop-opacity="1" />
+</linearGradient>
+
+<defs>
+<rect x="0" y="0" width="1623" height="148" id="symbol0" fill="url(#linear_PSgrad_0)"/></defs>
+<path fillRule="evenodd" d="M-12 80.99C-12 80.99 1611-0.01 1611-0.01 1611-0.01 1611 147.99 1611 147.99 1611 147.99-12 147.99-12 147.99-12 147.99-12 80.99-12 80.99Z" fill="rgb(255,255,255)" filter="url(#filter0)"/></svg>

@@ -1,0 +1,71 @@
+.service-navigation {
+    margin-bottom: 45px;
+    li { 
+        &.active, &:hover { 
+            .navigation-icon {
+                background: $orange;
+                &:after {
+                    border-top-color: $orange;
+                }
+                .icon {
+                    background: $orange;
+                    border-color: #ffb07c;
+                    color: #fff;
+                }
+            }
+        } 
+    }
+    .navigation-item {
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 15px;
+
+        .navigation-icon {
+            margin: 0 auto 55px;
+            width: 170px;
+            max-width: 100%;
+            background: #eff2f7;
+            @include border-radius(5px);
+            padding: 25px 0;
+            text-align: center;
+            position: relative;
+            @include transition(all 0.3s ease-out);
+            &:after {
+                content: "";
+                border: 15px solid transparent;
+                border-top: 15px solid #eff2f7;
+                display: block;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -15px; 
+                @include transition(all 0.3s ease-out);
+            }
+            .icon {
+                display: inline-block;
+                width: 88px;
+                height: 88px;
+                line-height: 88px;
+                border: 1px solid #fff;
+                text-align: center;
+                font-size: 32px;
+                color: #666666;
+                @include border-radius(50%);
+                background: #fff;
+                @include transition(all 0.3s ease-out);
+            }
+        }
+        h5 {
+            &:after {
+                margin: 20px auto 0;
+            }
+        }
+    }
+}
+
+.iphone-image {
+    img {
+        display: block;
+        margin-left: -280px;
+    }
+}

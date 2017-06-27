@@ -1,0 +1,53 @@
+.content-tabs {
+    text-align: center;
+    border: none;
+    font-size: 0;
+    padding: 30px 0;
+    > li {
+        border: none;
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        margin: 0 3px 15px 11px ;
+        a {
+            border: none;
+            padding: 0 35px;
+            line-height: 45px;
+            background: #eff2f7;
+            @include border-radius(5px);
+            @include transition(all 0.3s ease-out);
+            color: #333;
+            font-size: 11px;
+            text-transform: uppercase;
+            position: relative;
+            margin: 0;
+            &:after {
+                content: "";
+                border: 10px solid transparent;
+                top: 100%;
+                border-top-color: #eff2f7;
+                display: block;
+                position: absolute;
+                left: 50%;
+                margin-left: -10px;
+                @include transition(all 0.3s ease-out);
+            }
+            &:hover {
+                background: $orange;
+                color: #fff; 
+                &:after {
+                    border-top-color: $orange;
+                }
+            }
+        }
+    }
+    &.nav-tabs>li.active>a, &.nav-tabs>li.active>a:focus, &.nav-tabs>li.active>a:hover {
+        border: none;
+        background: $orange;
+        color: #fff; 
+        &:after {
+            border-top-color: $orange;
+        }
+    }
+}

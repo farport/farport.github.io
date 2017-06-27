@@ -1,0 +1,120 @@
+.sidebar {
+    .search {
+        margin-bottom: 40px;
+        input {
+            color: #2a2d32;
+        }
+        .icon {
+            color: $orange; 
+        }
+    }
+
+    .sidebar-box {
+        padding: 25px;
+        margin-bottom: 40px;
+        border: 1px solid #eeeeee;
+        h5 {
+            margin-bottom: 35px;
+        }
+    }
+    .category-list {
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            &:last-child {
+                border: none;
+            }
+            a {
+                display: block;
+                line-height: 20px;
+                padding: 5px 0;
+                font-size: 13px;
+                color: #666666;
+                &:before {
+                    content: "\e660";
+                    font-family: 'Stroke-Gap-Icons';
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    font-size: 30px;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-size: 12px;
+                    margin-right: 15px;
+                    display: inline-block;
+                    vertical-align: baseline;
+                    color: $orange;
+                }
+            }
+        }
+    }
+    .recent-posts {
+        .post-item {
+            margin-bottom: 30px;
+            .image {
+                margin-bottom: 15px;
+                img {
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+            h5 {
+                padding-bottom: 0;
+                margin-bottom: 10px;
+                &:after {
+                    display: none;
+                }
+            }
+            .meta-item {
+                font-size: 11px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #666666;
+                font-family: Raleway, sans-serif;
+                .icon {
+                    font-size: 11px;
+                    margin-right: 7px;
+                    vertical-align: middle;
+                    color: #666666;
+                }
+            }
+        }
+    }
+    .list-social {
+        &:after {
+            content: "";
+            clear: both;
+            height: 0;
+            display: table;
+        }
+        li {
+            float: left;
+            width: 33%;
+            padding: 1.5%;
+            a {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    
+    .list-tags {
+        font-size: 0;
+        li {
+            font-size: 12px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 6px 6px 0;
+            a {
+                padding-left: 12px;
+                padding-right: 12px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+} 

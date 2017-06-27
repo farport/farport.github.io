@@ -1,0 +1,130 @@
+/*------------------------------------------------------------------
+Project:	 OSCEND
+Version: 	1.0
+Assigned to:	Alximicus
+Primary use:	OSCEND
+-------------------------------------------------------------------*/
+
+
+/*************************/
+/***** BASE STYLES *******/
+/*************************/
+
+@import "_base.scss";
+/************************/
+/*        LAYOUT        */
+
+
+/******** HEADER *********/
+@import "layout/_header.scss";
+
+/******** FOOTER *********/
+@import "layout/_footer.scss";
+
+/******** SIDEBAR ********/
+@import "layout/_sidebar.scss";
+
+
+
+
+/*********  SECTIONS **********/
+
+@import "_sections.scss";
+
+
+
+
+/************************/
+/*        MODULES       */
+
+/****** LOADER ******/
+@import "modules/_loader.scss"; 
+
+/****** PAGINATION ******/ 
+@import "modules/_pagination.scss";
+
+/****** CONTACT FORM ******/ 
+@import "modules/_contact-form.scss";
+
+/****** SECTION ICON ******/ 
+@import "modules/_section-icon.scss";
+
+/****** DARK EFFECT ******/ 
+@import "modules/_dark-effect.scss";
+
+/******  BOTTOM EFFECT  ******/ 
+@import "modules/_bottom-effect.scss";
+
+/******  SECTION SLIDER ******/ 
+@import "modules/_section-slider.scss";
+
+/******  SECTION TILE ******/ 
+@import "modules/_section-tile.scss";
+
+/******  CLIENTS ITEM ******/ 
+@import "modules/_clients-item.scss";
+
+/******  SERVICE ITEM ******/ 
+@import "modules/_service-item.scss";
+
+/******  PLANS ITEM ******/ 
+@import "modules/_plans-item.scss";
+
+/******  NEWS ITEM ******/ 
+@import "modules/_news-item.scss";
+
+/******  FEATURE ITEM ******/ 
+@import "modules/_feature-item.scss";
+
+/******  ARCHIVE ITEM ******/ 
+@import "modules/_archive-item.scss";
+
+/******  STEPS ITEM ******/ 
+@import "modules/_steps-item.scss";
+
+/******  REVIEWS SLIDER ******/ 
+@import "modules/_reviews-slider.scss";
+
+/******  TEAM SLIDER ******/ 
+@import "modules/_team-slider.scss";
+
+/******  PORTFOLIO SLIDER ******/ 
+@import "modules/_portfolio-item.scss";
+
+/******  CONTENT TABS ******/ 
+@import "modules/_content-tabs.scss";
+
+/******  TIMELINE ******/ 
+@import "modules/_timeline.scss";
+
+/******  SERVICE NAVIGATION ******/ 
+@import "modules/_service-navigation.scss";
+
+/******  SOCIAL LIST ******/ 
+@import "modules/_social-list.scss";
+
+/******  COMMENTS ******/ 
+@import "modules/_comments.scss";
+
+
+
+
+/****** LOADER ******/
+@import "_demo.scss"; 
+
+
+/*MEDIA*/ 
+@import "_media.scss";
+
+/*THEMES*/   
+
+@import "themes/blue.scss";
+
+
+
+
+
+
+
+
+

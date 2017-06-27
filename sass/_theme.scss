@@ -1,0 +1,75 @@
+ 
+// Buttons
+
+.btn {
+    @include transition(all 0.3s ease-out);
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    line-height: 20px;  
+    &.btn-primary {
+        background: $orange; 
+        border: 1px solid $orange;
+        color: #fff;
+        &:hover, &:focus, &:active:focus {
+            background: darken($orange, 10%);
+            border-color: darken($orange, 10%);
+        }
+    }
+    &.btn-primary-warning {
+        border-radius: 0;
+        background: #fff;
+        color: #666; 
+        border: 1px solid #eee;
+        &:hover {
+            background: $orange;
+            color: #fff;
+            border-color: $orange;
+        }
+    }
+    &.btn-info {
+        background: rgba(255,255,255, 0.2); 
+        border: 1px solid rgba(255,255,255, 0.4);;
+        color: #fff;
+        &:hover, &:focus, &:active:focus {
+            /*color: #7f858f;*/
+            background: rgba(255,255,255, 0.3);
+            border: 1px solid #fff;
+        }
+    }
+}
+
+
+// INPUTS
+textarea {
+    max-width: 100%;
+}
+.form-control { 
+    background: none; 
+    box-shadow: none !important; 
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 0;
+    border-radius: none;
+    font-size: 12px;
+    padding-left: 0; 
+    height: 50px;
+    font-size: 11px ;
+    color: #999;
+    &:focus, &:active {
+        border-color: #dddddd;
+ 
+    }
+}
+
+.form-control-feedback {
+    top: 8px;
+} 
+.navbar-brand {
+    line-height: 70px;
+    padding: 0;
+}
+.navbar-brand>img {
+    display: inline-block;
+}
