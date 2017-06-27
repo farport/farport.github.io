@@ -5,6 +5,7 @@ $(function () {
     $(paraTag).children('button').remove();
     $(paraTag).append('<input  class="contact_button button btn btn-primary" type="button" name="submit" id="submit" value="Send Message" />');
 
+
     $('.contact-form #submit').click(function () {
         var firstName = $('input#firstName').val();
         var lastName = $('input#lastName').val();
@@ -37,6 +38,18 @@ $(function () {
             $('[name="subject"]').removeClass('vaidate_error');
         }
 
+        var body =
+            'From: ' + lastName + ', ' + firstName
+            + '\nPhone: ' + phone 
+            + '\n\nMessage:\n' + message;
+
+        var mailto = 'mailto:info@farport.co?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+        window.location.href = mailto;
+
+        console.log("href: ", mailto);
+ 
+        /*
         $.ajax({
             type: 'post',
             url: 'sendEmail.php',
@@ -46,6 +59,7 @@ $(function () {
 
             }
         }); // end ajax
+        */
     });
 
 });
