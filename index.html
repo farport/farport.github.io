@@ -26,6 +26,25 @@
 
         <link href="css/main.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" media="screen" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+        <script>
+            window.addEventListener("load", function(){
+                window.cookieconsent.initialise({
+                    "palette": {
+                        "popup": {
+                            "background": "#dcdfe4",
+                            "text": "#999999"
+                        },
+                        "button": {
+                            "background": "#0086be",
+                            "text": "#ffffff"
+                        }
+                    },
+                    "theme": "edgeless"
+                })
+            });
+        </script>
     </head>
     <body data-scrolling-animations="true" data-spy="scroll" class="blue-theme" data-target=".navbar-fixed-top">
 
