@@ -1,9 +1,9 @@
 function initMap() {
     console.log("Map Initialized...")
-    var fploc = {lat: 41.865378, lng: 12.423507};
+    var fploc = {lat: 41.878408, lng: 12.518710};
     var Options = {
         center: fploc,
-        zoom: 11,
+        zoom: 15,
         scrollwheel: false,
         navigationControl: false,
         mapTypeControl: false,
