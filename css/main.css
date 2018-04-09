@@ -873,6 +873,9 @@ body.fixed-header .scrolling-header .navbar .wrap-inside-nav { /*top: 64px;*/ }
 .demopage-footer span { color: #fff; font-size: 14px; font-weight: normal; text-align: center; }
 
 /*MEDIA*/
+@media only screen and (max-width: 520px) {
+     .top-header .header-container .header-title .title-big  { font-size: 9vw; }
+}
 @media (min-width: 1650px) { .with-top-effect { background-size: contain; } }
 @media (max-width: 1200px) { .portfolio-item .portfolio-image img { height: 295px; }
   .portfolio-list-section .list-works.mini-list-works .portfolio-item .portfolio-image img { height: 212px; }
